@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pesquisa de Satisfação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5faff;
+      margin: 40px;
+    }
+
+    h1 {
+      color: #003366;
+    }
+
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .grupo {
+      margin-bottom: 20px;
+    }
+
+    .opcoes {
+      margin: 10px 0;
+    }
+
+    .opcoes label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pesquisa de Satisfação do Cliente</h1>
+
+  <form action="#" method="post">
+    
+    <!-- Parte A - Dados pessoais -->
+    <div class="grupo">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" />
+    </div>
+
+    <!-- Parte B - Pesquisa -->
+    <div class="grupo">
+      <label>Como você avalia nosso atendimento?</label>
+      <div class="opcoes">
+        <label><input type="radio" name="atendimento" value="excelente" required /> Excelente</label>
+        <label><input type="radio" name="atendimento" value="bom" /> Bom</label>
+        <label><input type="radio" name="atendimento" value="ruim" /> Ruim</label>
+      </div>
+
+      <label>Você recomendaria nossos serviços?</label>
+      <div class="opcoes">
+        <label><input type="radio" name="recomendaria" value="sim" required /> Sim</label>
+        <label><input type="radio" name="recomendaria" value="nao" /> Não</label>
+      </div>
+
+      <label>Com que frequência você utiliza nossos serviços?</label>
+      <select name="frequencia" required>
+        <option value="">Selecione...</option>
+        <option value="diariamente">Diariamente</option>
+        <option value="semanalmente">Semanalmente</option>
+        <option value="mensalmente">Mensalmente</option>
+        <option value="raramente">Raramente</option>
+      </select>
+    </div>
+
+    <!-- Autorização -->
+    <div class="grupo">
+      <label>
+        <input type="checkbox" name="compartilhar" required />
+        Autorizo o compartilhamento das minhas respostas com terceiros.
+      </label>
+    </div>
+
+    <!-- Enviar -->
+    <button type="submit">Enviar Resposta</button>
+
+  </form>
+
+</body>
+</html>
