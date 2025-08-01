@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Testes de Seletores CSS</title>
+  <style>
+    /* EXERCÍCIO 1 - Estilizar links */
+    a {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: lime;
+    }
+
+    /* EXERCÍCIO 2 - Estilizar parágrafos */
+    p {
+      font-family: 'Arial';
+    }
+
+    h1 + p {
+      font-weight: bold;
+    }
+
+    /* EXERCÍCIO 3 - Estilizar classe .destaque */
+    .destaque {
+      font-family: Arial;
+    }
+
+    p.destaque {
+      font-weight: bold;
+    }
+
+    strong.destaque {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Título da Página</h1>
+
+  <!-- Parágrafo logo após h1 (deve ficar em negrito) -->
+  <p>Esse parágrafo descreve o resumo do conteúdo presente nesta página HTML. Por isso ele possui um estilo diferente dos demais parágrafos da página. Para mais informações, <a href="#">Clique aqui!</a></p>
+
+  <!-- Parágrafo comum -->
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error odio aspernatur explicabo <strong>laborum ut</strong>? Magnam obcaecati quidem ad doloremque nihil illum quisquam doloribus ab distinctio laborum ipsam, aliquid eligendi nulla.</p>
+
+  <!-- Outro parágrafo comum -->
+  <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Minima esse totam molestiae laborum iusto sequi temporibus quis facilis eveniet qui aperiam officiis, tempore ipsum numquam atque voluptate ea ducimus! Voluptatum!</p>
+
+  <!-- Testando a classe .destaque em um parágrafo -->
+  <p class="destaque">Texto de exemplo com a classe <strong class="destaque">destaque para o texto!</strong></p>
+
+</body>
+</html>
