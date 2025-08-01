@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios - CSS Unidades e Cores</title>
+  <style>
+    html {
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 2rem; /* 40px */
+      margin-bottom: 10px;
+    }
+
+    h1 > .principal {
+      font-size: 1.4em; /* 56px */
+      color: darkblue;
+    }
+
+    .secundario {
+      font-size: 1.4rem; /* 28px */
+      color: darkgreen;
+    }
+
+    .cores {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .cor-box {
+      width: 150px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .original { background-color: rgb(219, 78, 68); }
+    .clara { background-color: rgb(224, 105, 96); }
+    .escura { background-color: rgb(186, 66, 58); }
+  </style>
+</head>
+<body>
+
+  <h1>
+    Título H1
+    <span class="principal">.principal (56px)</span>
+  </h1>
+
+  <p class="secundario">Texto com classe .secundario (28px)</p>
+
+  <div class="cores">
+    <div class="cor-box original">Original<br>rgb(219, 78, 68)</div>
+    <div class="cor-box clara">+15% Clara<br>rgb(224, 105, 96)</div>
+    <div class="cor-box escura">-15% Escura<br>rgb(186, 66, 58)</div>
+  </div>
+
+</body>
+</html>
